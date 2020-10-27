@@ -5,12 +5,6 @@
 10.3.8.145
 10.3.9.43
 10.3.8.77
-10.3.10.136
-10.3.9.227
-10.3.9.15
-10.3.8.20
-10.3.10.9
-10.3.8.182
 
 [pd_servers]
 10.3.8.110
@@ -39,12 +33,6 @@
 10.3.8.145
 10.3.9.43
 10.3.8.77
-10.3.10.136
-10.3.9.227
-10.3.9.15
-10.3.8.20
-10.3.10.9
-10.3.8.182
 
 [alertmanager_servers]
 
@@ -62,13 +50,13 @@
 
 ## Global variables
 [all:vars]
-deploy_dir = /data/deploy
+deploy_dir = /home/tidb/deploy
 
 ## Connection
 # ssh via normal user
 ansible_user = tidb
 
-cluster_name = tuhu-cluster
+cluster_name = test-cluster
 
 tidb_version = v3.0.19
 
